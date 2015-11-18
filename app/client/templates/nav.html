@@ -1,0 +1,17 @@
+<template name="nav">
+  <nav>
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">
+          <img src="/images/bodhiprocessor.png" alt="BodhiProcessor" class="nav-logo">
+        </a>
+        <ul class="right side-nav fixed" id="nav-mobile">
+          <li class="{{isActiveRoute regex='home'}}"><a href="{{pathFor 'home'}}">Home</a></li>
+          <li class="{{isActiveRoute regex='learn'}}"><a href="{{pathFor 'learn'}}">Learn</a></li>
+          <li>{{> atNavButton}}</li>
+        </ul>
+        <a href="#" class="button-collapse" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+      </div>
+    </div>
+  </nav>
+</template>
