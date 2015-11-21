@@ -1,7 +1,6 @@
 FlowRouter.route('/', {
   name: "home",
   action: function(params, queryParams) {
-    console.log('wow!');
     BlazeLayout.render('masterLayout', {
       footer: "footer",
       main: "home",
@@ -30,3 +29,6 @@ FlowRouter.notFound = {
     });
   }
 };
+
+AccountsTemplates.configureRoute('signIn');
+AccountsTemplates.configureRoute('signUp');
